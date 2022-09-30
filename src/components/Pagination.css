@@ -18,6 +18,13 @@
     border: 1px solid #ddd;
     cursor: pointer;
 }
+.Pagination_container div:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.Pagination_container div:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
 .Pagination_container div.active {
     background-color: #007bff;
     color: white;
