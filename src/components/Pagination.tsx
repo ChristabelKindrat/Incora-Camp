@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {useState, useEffect} from "react";
 import cn from 'classnames';
 
 import './Pagination.css';
-import {PaginationProps} from '../interface/Interface'
+import {PaginationProps} from '../interfaces/Interface'
 
-function Pagination({activePage, totalItems, perPage, withActions, classes, onChangePage}: PaginationProps) {
+
+const Pagination= ({activePage, totalItems, perPage, withActions, classes, onChangePage}: PaginationProps)=> {
 
     const numberofPages = [];
     for (let i = 1; i <= totalItems; i++) {
