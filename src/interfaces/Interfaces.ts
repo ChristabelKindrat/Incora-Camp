@@ -1,15 +1,3 @@
-interface PaginationProps {
-    activePage: number;
-    totalItems: number;
-    perPage: number;
-    withActions?: boolean;
-    classes?: {
-        btn?: string;
-        activeBtn?: string;
-    }
-    onChangePage: (newPage: number) => void;
-}
-
 interface IUser {
     id: number;
     name: string;
@@ -46,4 +34,4 @@ interface IApp {
 
     setName(name: string): void;}
 
-export type {PaginationProps,IApp,IProject,ITask,IUser};
+export type {IApp,IProject,ITask,IUser};

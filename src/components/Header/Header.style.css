@@ -1,0 +1,12 @@
+.header {
+    height: 100px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header button{
+    margin-right: 30px;
+}

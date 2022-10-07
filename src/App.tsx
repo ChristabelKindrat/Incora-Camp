@@ -1,14 +1,14 @@
 import React, {FC} from 'react';
 import './App.css';
-import './components/Pagination';
+import './components/Pagination/Pagination';
 import {Switch, Route} from "react-router-dom";
 
-import {Pagination} from './components/Pagination';
-import {Tasks} from "./components/Tasks";
-import {ProtectedRoute} from "./components/ProtectedRoute";
-import {Header} from "./components/Header";
-import {Footer} from "./components/Footer";
-import {Links} from "./pages/Links";
+import {Pagination} from './components';
+import {Tasks} from "./components";
+import {ProtectedRoute} from "./components";
+import {Header} from "./components";
+import {Footer} from "./components";
+import {Links} from "./pages";
 
 const App: FC = () => {
     return (
@@ -22,9 +22,8 @@ const App: FC = () => {
                             <Tasks/>
                         </Route>
                         <Route path={"/pagination"}>
-                            <Pagination activePage={1} perPage={1} withActions={true} totalItems={5}
-                                        onChangePage={(newPage: number) => {
-                                        }} classes={{btn: 'Pagination_container', activeBtn: "active"}}/>
+                            <Pagination activePage={1} perPage={5} withActions={true} totalItems={26}
+                                         classes={{btn: 'Pagination_container', activeBtn: "active"}}/>
                         </Route>
                         <Route path={"/setting"}>
                             <ProtectedRoute/>

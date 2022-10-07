@@ -1,16 +1,11 @@
-import {ITask, IProject, IApp, IUser} from "../interfaces/Interface";
+import {ITask, IProject, IApp, IUser} from "../../interfaces/Interfaces";
 import React, {FC} from 'react';
 
+import './Tasks.style.css'
 
 const Tasks: FC = () => {
     return (
-        <div style={{
-            height: 350,
-            width: 950,
-            margin: 10,
-            borderRadius: 15,
-            backgroundColor: "white"
-        }}>
+        <div className={'tasks'}>
             <ol>
                 <li style={{padding: 20}}>Starting the TypeScript Project</li>
                 <li style={{padding: 20}}>Compiling the TypeScript Project</li>
