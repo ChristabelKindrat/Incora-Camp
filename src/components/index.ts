@@ -1,0 +1,5 @@
+export * from "./Footer/Footer"
+export * from "./Header/Header"
+export * from "./Pagination/Pagination"
+export * from "./Tasks/Tasks"
+export * from "./ProtectedRoute/ProtectedRoute"
